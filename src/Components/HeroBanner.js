@@ -57,22 +57,21 @@ const HeroBanner = () => {
       >
         Exercise
       </Typography>
-      <Typography>
+   
         <img
           src={HeroBannerimg}
           alt="hero-banner"
           className="herobannerimg"
           sx={{ display: { md: "block", xs: "none" } }}
         />
-      </Typography>
-      <Typography>
+  
         <img
           src={HeroBannerimgtwo}
           alt="hero-banner"
           className="herobannerimg2"
           sx={{ display: { md: "block", xs: "none" } }}
         />
-      </Typography>
+    
     </Box>
   );
 };
