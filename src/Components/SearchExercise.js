@@ -23,7 +23,7 @@ const SearchExercise = () => {
             borderRadius: "40px",
           }}
           value={search}
-          onChange={(e) => {}}
+          onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Search..."
           type="text"
         ></TextField>
@@ -39,6 +39,7 @@ const SearchExercise = () => {
             right: "0px",
             fontSize: { lg: "20px", xs: "14px" },
           }}
+          onClick={handleSearch}
         >
           Search
         </Button>
