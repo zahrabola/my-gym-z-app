@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
+import HeroBannerimg from "../images/coverimg.jpeg";
+import HeroBannerimgtwo from "../images/covertwo.jpeg";
 
 const HeroBanner = () => {
   return (
@@ -24,7 +26,24 @@ const HeroBanner = () => {
       </Typography>
       <Stack>
         {" "}
-        <a href="#exercises"   style={{ marginTop: '45px', textDecoration: 'none', width: '200px', textAlign: 'center', background: '#FF2625', padding: '14px', fontSize: '22px', textTransform: 'none', color: 'white', borderRadius: '4px' }}>Explore Exercises</a>
+        <a
+          href="#exercises"
+          style={{
+            marginTop: "45px",
+            marginBottom: "35px",
+            textDecoration: "none",
+            width: "200px",
+            textAlign: "center",
+            background: "#FF2625",
+            padding: "14px",
+            fontSize: "22px",
+            textTransform: "none",
+            color: "white",
+            borderRadius: "4px",
+          }}
+        >
+          Explore Exercises
+        </a>
       </Stack>
 
       <Typography
@@ -37,6 +56,22 @@ const HeroBanner = () => {
         }}
       >
         Exercise
+      </Typography>
+      <Typography>
+        <img
+          src={HeroBannerimg}
+          alt="hero-banner"
+          className="herobannerimg"
+          sx={{ display: { md: "block", xs: "none" } }}
+        />
+      </Typography>
+      <Typography>
+        <img
+          src={HeroBannerimgtwo}
+          alt="hero-banner"
+          className="herobannerimg2"
+          sx={{ display: { md: "block", xs: "none" } }}
+        />
       </Typography>
     </Box>
   );
