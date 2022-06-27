@@ -63,6 +63,7 @@ const Bmi = () => {
             width: { lg: "173px", xs: "80px" },
             height: "56px",
             top: "-42px",
+            marginTop: "50px",
             right: "0px",
             fontSize: { lg: "20px", xs: "14px" },
           }}
