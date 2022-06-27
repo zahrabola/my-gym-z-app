@@ -8,7 +8,7 @@ import Footer from "./Components/Footer"
 
 function App() {
   return (
-    <Box width="400px">
+    <Box >
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
