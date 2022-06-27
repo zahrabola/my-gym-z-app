@@ -4,10 +4,13 @@ import './App.css';
 
 function App() {
   return (
-
-   <Box width="400px">
-    Navbar
-   </Box>
+    <Box width="400px">
+      Navbar
+      <Routes>
+        <Route path="/" eleement={<Home />} />
+        <Route path="/exercise/:id" eleement={<ExerciseDetail />} />
+      </Routes>
+    </Box>
   );
 }
 
