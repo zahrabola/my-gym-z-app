@@ -1,21 +1,46 @@
 import React, { useEffect, useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-import {exerciseOptions ,  fetchData} from "../Data/fetchData";
+import { exerciseOptions, fetchData } from "../Data/fetchData";
 
 const SearchExercise = () => {
-const [search, setSearch]= useState ('')
+  const [search, setSearch] = useState("");
+  const [bodyexercises, setBodyExercises] = useState([])
+  const [bodyParts, setBodyParts] = useState([]);
 
-const handleSearch = async () => {
-    if(search) {
-const exerciseData = await fetchData(
-  "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
-  exerciseOptions
-);
-console.log(exerciseData);
+  useEffect(() => {
+    const fetchExercisesData = async () => {
+      const bodyPartsData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+        exerciseOptions
+      );
+
+      setBodyParts(["all", ...bodyPartsData]);
+    };
+
+    fetchExercisesData();
+  }, []);
+
+
+
+  const handleSearch = async () => {
+    if (search) {
+      const exerciseData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises",
+        exerciseOptions
+      );
+     console.log(exerciseData);
+     const searchedExercises = exerciseData.filter(
+       (item) =>
+         item.name.toLowerCase().includes(search) ||
+         item.target.toLowerCase().includes(search) ||
+         item.equipment.toLowerCase().includes(search) ||
+         item.bodyPart.toLowerCase().includes(search)
+     );
+ setSearch("");
+ setBodyExercises(searchedExercises);
+
     }
-}
-
-
+  };
 
   return (
     <Stack alignItems="center" justifyContent="center" p="20px" mt="20px">
@@ -55,12 +80,11 @@ console.log(exerciseData);
             fontSize: { lg: "20px", xs: "14px" },
           }}
           onClick={handleSearch}
-          
         >
           Search
         </Button>
       </Box>
-      <Box>Scroll bar</Box>
+      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>Scroll bar</Box>
     </Stack>
   );
 };
