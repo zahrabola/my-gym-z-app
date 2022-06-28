@@ -27,9 +27,6 @@ const RightArrow = () => {
 
 
 
-
-
-
 const Scrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
 return (
   <ScrollMenu RightArrow={RightArrow} LeftArrow={LeftArrow}>

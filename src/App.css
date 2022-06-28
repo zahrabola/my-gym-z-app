@@ -43,3 +43,14 @@
   transform: scale(1.1, 1.1);
   cursor: pointer;
 }
+
+.rightarrow,
+.leftarrow {
+  cursor: pointer;
+  outline: none;
+  color: #FF2625;
+
+}
+.react-horizontal-scrolling-menu--wrapper {
+  display: none;
+}
