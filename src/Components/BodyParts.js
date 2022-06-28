@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Typography } from "@mui/material";
-import { FaBeer } from "react-icons/fa";
+
 import Icon from "../images/gym.png";
 
 const BodyParts = ({ item, setBodyPart, bodyPart }) => {
