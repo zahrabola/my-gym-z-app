@@ -34,3 +34,11 @@
 .se-text{
   align-items: center;
 }
+
+.bodypartcard {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+.bodypartcard:hover {
+  transform: scale(1.1, 1.1);
+}
