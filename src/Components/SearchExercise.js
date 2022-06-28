@@ -86,7 +86,7 @@ const SearchExercise = () => {
         </Button>
       </Box>
       <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-      <Scrollbar />
+      <Scrollbar data={bodyParts}/>
       </Box>
     </Stack>
   );
