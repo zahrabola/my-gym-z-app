@@ -35,7 +35,7 @@ return (
         key={item.id || item}
         itemId={item.id || item}
         title={item.id || item}
-        m="0 40px"
+        m="0 10px"
       >
         <BodyParts item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} />
       </Box>

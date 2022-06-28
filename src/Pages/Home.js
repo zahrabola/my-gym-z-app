@@ -6,21 +6,21 @@ import Bmi from "../Components/Bmi";
 import Exercise from "../Components/Exercise";
 
 const Home = () => {
-    const [bodyexercises, setBodyExercises] = useState([]);
+    const [exercises, setExercises] = useState([]);
       const [bodyPart, setBodyPart] = useState("all");
   return (
     <Box>
       <HeroBanner />
       <Bmi />
       <SearchExercise
-        setBodyExercises={setBodyExercises}
+        setExercises={setExercises}
         bodyPart={bodyPart}
         setBodyPart={setBodyPart}
       />
       <Exercise
-        setBodyExercises={setBodyExercises}
+        setExercises={setExercises}
+        exercises={exercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
       />
     </Box>
   );

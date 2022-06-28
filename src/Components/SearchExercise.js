@@ -3,7 +3,7 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../Data/fetchData";
 import Scrollbar from "./Scrollbar";
 
-const SearchExercise = (setBodyExercises, bodyPart, setBodyPart) => {
+const SearchExercise = (setExercises, bodyPart, setBodyPart) => {
   const [search, setSearch] = useState("");
   const [bodyParts, setBodyParts] = useState([]);
 
@@ -35,7 +35,7 @@ const SearchExercise = (setBodyExercises, bodyPart, setBodyPart) => {
           item.bodyPart.toLowerCase().includes(search)
       );
       setSearch("");
-      setBodyExercises(searchedExercises);
+      setExercises(searchedExercises);
     }
   };
 
