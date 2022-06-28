@@ -6,7 +6,7 @@ import BodyParts from "./BodyParts";
 
 const Scrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
   return (
-    <divz>
+    <ScrollMenu>
       {data.map((item) => (
         <Box
           key={item.id || item}
@@ -21,7 +21,7 @@ const Scrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
           />
         </Box>
       ))}
-    </divz>
+    </ScrollMenu>
   );
 };
 
