@@ -29,7 +29,7 @@ const Bmi = () => {
     <Stack alignItems="center" justifyContent="center" p="10px" mt="20px">
       <h1>BMI Calculator</h1>
       <p>Enter your weight and height below.</p>
-      <Box position="relative" mb="72px">
+      <Box position="relative" mb="22px">
         <Typography>Weight</Typography>
         <TextField
           height="80px"
@@ -63,7 +63,7 @@ const Bmi = () => {
             width: { lg: "173px", xs: "80px" },
             height: "56px",
             top: "-42px",
-            marginTop: "50px",
+            marginTop: "40px",
             right: "0px",
             fontSize: { lg: "20px", xs: "14px" },
           }}
