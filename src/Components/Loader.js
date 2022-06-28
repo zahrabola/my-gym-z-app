@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 
 
 const Loader = () => (
@@ -9,7 +9,14 @@ const Loader = () => (
     alignItems="center"
     width="100%"
   >
-   
+    <Typography
+      variant="h4"
+      fontWeight="bold"
+      sx={{ fontSize: { lg: "44px", xs: "30px" } }}
+      mb="46px"
+    >
+Loading...
+    </Typography>
   </Stack>
 );
 
