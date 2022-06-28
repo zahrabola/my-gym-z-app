@@ -40,7 +40,7 @@ const SearchExercise = (setBodyExercises, bodyPart, setBodyPart) => {
   };
 
   return (
-    <Stack alignItems="center" justifyContent="center" p="20px" mt="20px">
+    <Stack alignItems="center" justifyContent="center" p="20px" mt="10px">
       <Typography
         fontWeight={500}
         sx={{ fontSize: { lg: "44px", xs: "30px" } }}
