@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../Data/fetchData";
+import Scrollbar from "../Components/Scrollbar";
 
 const SearchExercise = () => {
   const [search, setSearch] = useState("");
@@ -84,7 +85,9 @@ const SearchExercise = () => {
           Search
         </Button>
       </Box>
-      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>Scroll bar</Box>
+      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
+      <Scrollbar />
+      </Box>
     </Stack>
   );
 };
