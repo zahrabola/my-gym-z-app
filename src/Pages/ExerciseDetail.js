@@ -19,18 +19,22 @@ const exerciseDbUrl = 'https://exercisedb.p.rapidapi.com';
 //youtube
 const YoutubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com';
 
+
+const exerciseDetailData = await fetchData (`${exerciseDbUrl}/exercises/${id}`, 
+exerciseOptions)
+setExerciseDetail(exerciseDetailData);
+
         }
         fetchExercisesData 
     }, [id]);
 
     return (
-        <Box>
-<Detail ExerciseDetail={}/>
-<ExerciseVideo />
-<SimilarExercise />
-        </Box>
-       
-    )
+      <Box>
+        <Detail ExerciseDetail={exerciseDetail} />
+        <ExerciseVideo />
+        <SimilarExercise />
+      </Box>
+    );
 }
 
 export default ExerciseDetail;
