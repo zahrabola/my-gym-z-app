@@ -45,16 +45,13 @@ const Navbar = () => {
             Home
           </Link>
           <a
-            href="#exercises"
+            href="exercise/:id"
             style={{ textDecoration: "none", color: "#e30000" }}
           >
             Exercise
           </a>
-          <a
-            href="#login"
-            style={{ textDecoration: "none", color: "#e30000" }}
-          >
-         Login
+          <a href="#login" style={{ textDecoration: "none", color: "#e30000" }}>
+            Login
           </a>
         </Stack>
       </Stack>
