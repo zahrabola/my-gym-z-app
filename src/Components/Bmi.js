@@ -53,7 +53,9 @@ const Bmi = () => {
           }}
           onChange={(e) => setHeight(e.target.value)}
           placeholder="Height in cm"
-        ></TextField>
+        >
+          {" "}
+        </TextField>
         <Button
           className="searchbtn"
           sx={{
@@ -62,8 +64,8 @@ const Bmi = () => {
             textTransform: "none",
             width: { lg: "173px", xs: "80px" },
             height: "56px",
-            top: "-42px",
-            marginTop: "40px",
+            top: "-40px",
+            marginTop: "50px",
             right: "0px",
             fontSize: { lg: "20px", xs: "14px" },
           }}
@@ -72,7 +74,7 @@ const Bmi = () => {
           Calculate
         </Button>
       </Box>
-        <h1>{bmi}</h1>
+      <h1>{bmi}</h1>
       <h2>{info}</h2>
     </Stack>
   );

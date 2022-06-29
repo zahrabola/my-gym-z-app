@@ -34,7 +34,14 @@ const Navbar = () => {
           fontSize="24px"
           alignItems="flex-end"
         >
-          <Link to="/" style={{ textDecoration: "none", color: "#e30000", borderBottom: '3px solid #FF2625'}}>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              color: "#e30000",
+              borderBottom: "3px solid #FF2625",
+            }}
+          >
             Home
           </Link>
           <a
@@ -42,6 +49,12 @@ const Navbar = () => {
             style={{ textDecoration: "none", color: "#e30000" }}
           >
             Exercise
+          </a>
+          <a
+            href="#login"
+            style={{ textDecoration: "none", color: "#e30000" }}
+          >
+         Login
           </a>
         </Stack>
       </Stack>
