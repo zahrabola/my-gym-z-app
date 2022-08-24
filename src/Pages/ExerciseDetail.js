@@ -15,7 +15,7 @@ const ExerciseDetail = () => {
     useEffect(()=> {
         const fetchExercisesData = async () => {
 //Api calls
-const exerciseDbUrl =  'https://exercisedb.p.rapidapi.com';
+//const exerciseDbUrl = 'https://exercisedb.p.rapidapi.com';
 //youtube
 //const YoutubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com';
 
