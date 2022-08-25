@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Box, Stack } from '@mui/material';
 import Loader from "./Loader";
+import { width } from "@mui/system";
 
 
 const ExerciseVideo = ({ exerciseVideos, name }) => {
@@ -27,7 +28,9 @@ console.log(exerciseVideos);
         Exercise Videos
       </Typography>
       <Stack
-        sx={{ flexDirection: { lg: "row" }, gap: { lg: "110px", xs: "0px" } }}
+        direction="row"
+        gap="24px" 
+        sx={{ flexDirection: { lg: "row" } , gap: { lg: "110px", xs: "0px" } }}
         justifyContent="flex-start"
         flexWrap="wrap"
         alignItems="center"
@@ -41,14 +44,15 @@ console.log(exerciseVideos);
             rel="noreferrer"
             >
             <img
+            className="video-img"
               src={item.video.thumbnails[0].url}
               alt={item.video.title}
-              style={{ borderTopLeftRadius: "30px" }}
+              style={{ borderTopLeftRadius: "30px"}}
             />
             <Box>
               <Typography
-                sx={{ fontSize: { lg: "28px", xs: "18px" } }}
-                fontWeight={600}
+                sx={{ fontSize: { lg: "20px", xs: "15px" } }}
+                fontWeight={400}
                 color="#000"
               >
                 {item.video.title}
