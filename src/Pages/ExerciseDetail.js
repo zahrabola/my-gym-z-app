@@ -31,11 +31,11 @@ console.log({ exerciseDetailData });
 setExerciseDetail(exerciseDetailData);
 
 //// fetch youtube
-   /// const exerciseVideosData = await fetchData(
-     /// `${youtubeSearchUrl}/search?query=${exerciseDetailData.name} exercise`,
-    ///  youtubeOptions
-    ///);
-   //setExerciseVideos(exerciseVideosData.contents);
+    const exerciseVideosData = await fetchData(
+     `${youtubeSearchUrl}/search?query=${exerciseDetailData.name} exercise`,
+     youtubeOptions
+    );
+   setExerciseVideos(exerciseVideosData.contents);
 
 
 
