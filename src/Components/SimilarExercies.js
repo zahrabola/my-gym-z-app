@@ -4,6 +4,7 @@ import Loader from "./Loader";
 import Scrollbar from "./Scrollbar";
 
 const SimilarExercise = ({ targetMuscleExercises, equipmentExercises }) => {
+ 
   return (
     <Box sx={{ mt: { lg: "100px", xs: "0px" } }}>
       <Typography
@@ -20,7 +21,7 @@ const SimilarExercise = ({ targetMuscleExercises, equipmentExercises }) => {
         Exercieses
       </Typography>
       <Stack>
-        {targetMuscleExercises.length !== 0 ? (
+        {targetMuscleExercises.length ? (
           <Scrollbar data={targetMuscleExercises} />
         ) : (
           <Loader />
@@ -40,11 +41,8 @@ const SimilarExercise = ({ targetMuscleExercises, equipmentExercises }) => {
         Exercieses
       </Typography>
       <Stack>
-        {equipmentExercises.length !== 0 ? (
-          <Scrollbar data={equipmentExercises} />
-        ) : (
-          <Loader />
-        )}
+        {" "}
+        <Loader />
       </Stack>
     </Box>
   );
