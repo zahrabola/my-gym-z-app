@@ -37,7 +37,15 @@ return (
         title={item.id || item}
         m="0 10px"
       >
-        <BodyParts item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+        {bodyParts ? (
+          <BodyParts
+            item={item}
+            bodyPart={bodyPart}
+            setBodyPart={setBodyPart}
+          />
+        ) : (
+          <ExerciseCard exercise={item} />
+        )}
       </Box>
     ))}
   </ScrollMenu>

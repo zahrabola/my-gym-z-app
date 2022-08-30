@@ -40,7 +40,11 @@ const SimilarExercise = ({ targetMuscleExercises, equipmentExercises }) => {
         Exercieses
       </Typography>
       <Stack>
-        <Loader />
+        {equipmentExercises.length !== 0 ? (
+          <Scrollbar data={equipmentExercises} />
+        ) : (
+          <Loader />
+        )}
       </Stack>
     </Box>
   );
