@@ -66,7 +66,10 @@ const [exerciseVideos, setExerciseVideos] = useState([]);
           exerciseVideos={exerciseVideos}
           name={exerciseDetail.name}
         />
-        <SimilarExercise />
+        <SimilarExercise
+          targetMuscleExercisesData={targetMuscleExercises}
+          equimentExercisesData={equipmentExercises}
+        />
       </Box>
     );
 }

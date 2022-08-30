@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Box, Stack } from '@mui/material';
 import Loader from "./Loader";
-import { width } from "@mui/system";
+///import { width } from "@mui/system";
 
 
 const ExerciseVideo = ({ exerciseVideos, name }) => {
