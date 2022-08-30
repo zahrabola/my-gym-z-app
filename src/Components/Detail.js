@@ -58,7 +58,7 @@ const Detail = ({ exerciseDetail }) => {
               <img
                 src={item.icon}
                 alt={bodyPart}
-                style={{ width: "50px", height: "50px" }}
+                style={{ width: "60px", height: "60px" }}
               />
             </Button>
             <Typography

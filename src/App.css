@@ -49,6 +49,7 @@
   cursor: pointer;
   outline: none;
   color: #FF2625;
+  padding: 10px;
 
 }
 .react-horizontal-scrolling-menu--wrapper {
@@ -57,6 +58,7 @@
 }
 .detail-image{
   padding-left:160px;
+  width: 600px;
 }
 .exercise-video{
   padding: 20px;}
