@@ -29,25 +29,25 @@ console.log(exerciseVideos);
       </Typography>
       <Stack
         direction="row"
-        gap="24px" 
-        sx={{ flexDirection: { lg: "row" } , gap: { lg: "110px", xs: "0px" } }}
+        gap="24px"
+        sx={{ flexDirection: { lg: "row" }, gap: { lg: "110px", xs: "0px" } }}
         justifyContent="flex-start"
         flexWrap="wrap"
         alignItems="center"
       >
         {exerciseVideos?.slice(0, 4)?.map((item, index) => (
-          <a 
-          key={index}
+          <a
+            key={index}
             className="exercise-video"
             href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
             target="_blank"
             rel="noreferrer"
-            >
+          >
             <img
-            className="video-img"
+              className="video-img"
               src={item.video.thumbnails[0].url}
               alt={item.video.title}
-              style={{ borderTopLeftRadius: "30px"}}
+              style={{ borderTopLeftRadius: "30px" }}
             />
             <Box>
               <Typography
@@ -57,7 +57,10 @@ console.log(exerciseVideos);
               >
                 {item.video.title}
               </Typography>
-              <Typography> {item.video.channelName}</Typography>
+              <Typography fontSize="12px" color="#000">
+                {" "}
+                {item.video.channelName}
+              </Typography>
             </Box>
           </a>
         ))}
